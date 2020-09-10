@@ -1,0 +1,14 @@
+POST /v1/payment HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+  "cardNo": "123421123124",
+  "expDate": "1226",
+  "cvc": 123,
+  "price": 1000,
+  "vat": 100,
+  "installmentMonth": 0
+}
+
+###
