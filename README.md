@@ -90,6 +90,7 @@ java -jar build/libs/payment-0.9.0-SNAPSHOT.jar
         
     - Multithread Safe : [/src/test/java/usecase/com/jywoo/payment/MultiThreadTest.java](./src/test/java/com/jywoo/payment/MultiThreadTest.java)
 
+
 ## 회고
  ### 신경쓴 부분
  - JPA를 사용하였으나, 도메인 연관관계 등에서 발생하는 이슈를 줄이기 위해 도메인 별 별도 서비스를 두었다.
