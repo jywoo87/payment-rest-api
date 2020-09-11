@@ -67,7 +67,6 @@ java -jar build/libs/payment-0.9.0-SNAPSHOT.jar
 
 
 ## API
-
  - body를 보면 알 수 있는 내용이라 자세한 사항은 생략한다.
     - 결제요청 (POST /v1/payment) : [/src/test/http/payment.http](./src/test/http/payment.http)
     - 결제취소요청 (POST /v1/cancel) : [/src/test/http/cancel.http](./src/test/http/cancel.http)
@@ -88,8 +87,8 @@ java -jar build/libs/payment-0.9.0-SNAPSHOT.jar
         ![./image/cancel_2.png](./image/cancel_2.png)
         - TestCase 3
         ![./image/cancel_3.png](./image/cancel_3.png)
+        
     - Multithread Safe : [/src/test/java/usecase/com/jywoo/payment/MultiThreadTest.java](./src/test/java/com/jywoo/payment/MultiThreadTest.java)
-
 
 ## 회고
  ### 신경쓴 부분
