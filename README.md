@@ -68,24 +68,28 @@ java -jar build/libs/payment-0.9.0-SNAPSHOT.jar
 
 ## API
  - body를 보면 알 수 있는 내용이라 자세한 사항은 생략한다.
- ~~~
- - 결제요청 (POST /v1/payment) : $proj/src/test/http/payment.http 참고
- - 결제취소요청 (POST /v1/cancel) : $proj/src/test/http/cancel.http 참고
- - 데이터조회 (GET /v1/search/{transactionId}) : $proj/src/test/http/search.http 참고
- ~~~
+    - 결제요청 (POST /v1/payment) : [/src/test/http/payment.http](./src/test/http/payment.http)
+    - 결제취소요청 (POST /v1/cancel) : [/src/test/http/cancel.http](./src/test/http/cancel.http)
+    - 데이터조회 (GET /v1/search/{transactionId}) : [/src/test/http/search.http](./src/test/http/search.http)
+ 
 
 ## 문제별 테스트 케이스 안내
 - 필수구현 API
-~~~
- 1. 결제 API : $proj/test/java/usecase/PaymentUseCaseTest.java
- 2. 결제취소 API : $proj/test/java/usecase/CancelUseCaseTest.java
- 3. 데이터조회 API : $proj/test/java/usecase/SearchUseCaseTest.java
-~~~
+    - 결제 API : [/src/test/java/usecase/com/jywoo/payment/usecase/PaymentUseCaseTest.java](./src/test/java/com/jywoo/payment/usecase/PaymentUseCaseTest.java)
+    - 결제취소 API : [/src/test/java/usecase/com/jywoo/payment/usecase/CancelUseCaseTest.java](./src/test/java/com/jywoo/payment/usecase/CancelUseCaseTest.java)
+    - 데이터조회 API : [/src/test/java/usecase/com/jywoo/payment/usecase/CancelUseCaseTest.java](./src/test/java/com/jywoo/payment/usecase/SearchUseCaseTest.java)
+
 - 선택구현 API
-~~~
- 1. 부분취소 : $proj/test/java/CancelTest.java
- 2. Multithread Safe : $proj/test/java/usecase/MultiThreadTest.java
-~~~
+    - 부분취소 : [/src/test/java/usecase/com/jywoo/payment/CancelTest.java](./src/test/java/com/jywoo/payment/CancelTest.java)
+        - TestCase 1
+        ![./image/cancel_1.png](./image/cancel_1.png)
+        - TestCase 2
+        ![./image/cancel_2.png](./image/cancel_2.png)
+        - TestCase 3
+        ![./image/cancel_3.png](./image/cancel_3.png)
+        
+    - Multithread Safe : [/src/test/java/usecase/com/jywoo/payment/MultiThreadTest.java](./src/test/java/com/jywoo/payment/MultiThreadTest.java)
+
 
 ## 회고
  ### 신경쓴 부분

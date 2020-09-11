@@ -3,9 +3,9 @@ Host: localhost:8080
 Content-Type: application/json
 
 {
-	"transactionId": "20200910203339JSluZM",
-	"price": 100,
-	"vat": 10
+  "transactionId": "20200910203339JSluZM",
+  "price": 100,
+  "vat": 10
 }
 
 ###
